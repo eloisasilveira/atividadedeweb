@@ -90,12 +90,12 @@ main {
         margin-bottom: 1rem;
     }
 
-    .pink {
+    .red {
         background: rgb(109, 15, 181);
     }
 
     #relative {
-        .pink {
+        .red {
              position: relative;
              bottom: 3rem;
              right: 3rem;
@@ -104,7 +104,7 @@ main {
 
     #absolute {
         position: relative;
-        .pink {
+        .red {
             position : absolute;
             top: 0;
             left: 10rem;
