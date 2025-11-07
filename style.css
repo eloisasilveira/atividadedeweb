@@ -42,7 +42,7 @@ header {
 
 
         a {
-            color: #ffffff;
+            color: rgb(215, 147, 255)fff;
             text-decoration: none;
         }
 
@@ -57,7 +57,7 @@ header {
 }
 
 main {
-    background: rgb(147, 83, 207);
+    background: rgb(227, 136, 255);
     min-height: calc(100svh - 9.8rem);
     padding-block: 3rem;
     text-align: center;
@@ -83,7 +83,7 @@ main {
     }
 
     div {
-        background: rgb(135, 112, 216) 211);
+        background: rgb(135, 112, 216);
         width: 6rem;
         height: 6rem;
         margin-inline: auto;
