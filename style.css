@@ -1,54 +1,67 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Oswald', sans-serif;
+    scroll-padding-top: 9.8rem;
+    scroll-behavior: smooth;
 }
 
 :root {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 1.6rem;
 }
 
 header {
-    background-color: rgb(48, 176, 176);
+    background: rgb(196, 101, 255);
     padding-block: 1rem;
     color: #fff;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
-.header-conteiner {
+.header-container {
     max-width: 120rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+
     
-     ul {
+    ul {
         display: flex;
         gap: 4rem;
         list-style: none;
 
-        a{
-            color: #fff;
+
+        a {
+            color: #ffffff;
             text-decoration: none;
         }
-        
+
         li:hover {
             transform: scale(1.1);
             font-weight: 700;
-            transition: ease-in-out .4s;
+            transition: ease-in-out;
         }
-     }
+    }
+
 
 }
 
 main {
-    background: #fff;
+    background: rgb(147, 83, 207);
     min-height: calc(100svh - 9.8rem);
+    padding-block: 3rem;
+    text-align: center;
+    margin-top: 9.8rem;
 }
 
 .main-container {
@@ -56,46 +69,47 @@ main {
     margin: 0 auto;
 
     section {
-        margin: bottom 7px;
+        margin-bottom: 4rem;
     }
 
-    h2{
+    h2 {
         margin-bottom: 2rem;
     }
 
     p {
-         max-width: 70rem;
-         margin: 0 auto;
-         line-height: 2.5rem;
-
+        max-width: 70rem;
+        margin: 0 auto;
+        line-height: 2.5rem;
     }
+
     div {
-        background-color: blueviolet;
-        max-width: 3rem;
-        margin-bottom: 1rem;
+        background: rgb(135, 112, 216) 211);
+        width: 6rem;
+        height: 6rem;
         margin-inline: auto;
-}
+        margin-bottom: 1rem;
+    }
 
-.pink {
-    background: floralwhite;
-}
-}
-
-#relative {
     .pink {
+        background: rgb(109, 15, 181);
+    }
+
+    #relative {
+        .pink {
+             position: relative;
+             bottom: 3rem;
+             right: 3rem;
+        }
+    }
+
+    #absolute {
         position: relative;
-        bottom: 3rem;
-        right: 3 rem;
-    }
-
-
-}
-
-#absolute {
-    border:  1px solid red;
-
-    .pink{
-        position: absolute;
-        top: 0;
+        .pink {
+            position : absolute;
+            top: 0;
+            left: 10rem;
+        }
     }
 }
+
+
